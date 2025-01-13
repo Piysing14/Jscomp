@@ -6,6 +6,12 @@ let Car=Object.seal({
     model:2023
 })
 
+let Owner={
+    name:"Piyush",
+    age:26
+}
+
 Car.model=2025 //existing prop we can change
 Car.brand="Hyundai" //Cant add new prop as it is sealed
-console.log(Car)
+console.log(Car,Object.isSealed(Car))
+console.log(Owner,Object.isSealed(Owner))
