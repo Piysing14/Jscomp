@@ -28,4 +28,13 @@ class MyObj{
 
 let obj4= new MyObj("Object4",4)
 
-console.log(obj1,obj2,Obj3,obj4)
+//Object.create method
+let prototy={
+     greet(){
+        console.log(`Hello I am ${this.name}`)
+    }
+}
+let obj5=Object.create(prototy)
+obj5.name="Object5"
+
+console.log(obj1,obj2,Obj3,obj4,obj5)
