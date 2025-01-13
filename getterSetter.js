@@ -11,6 +11,8 @@ let obj={
         this.surName=para.sName;
     }
 }
+//Setters dont work on frozen objects
+Object.freeze(obj);
 
 obj.setFullName={fName:"Peeyush", sName:"Singh"};
 obj.getFullName;
