@@ -64,3 +64,67 @@ function a(){
 
 }
 console.log(typeof(a))
+
+// const a = [1, 2, 3];
+// const b = a.reduce((acc, x) => acc.concat([x * x]), []);
+// console.log(b);
+
+// var tensquared = (function(x) {
+//     return x * x;
+//     }(10));
+
+//     console.log(tensquared)
+
+// function getAge() {
+//     'use strict';
+//     age = 21;
+//     console.log(age);
+//     }
+//     getAge();
+
+// let myString = "hello world";
+// let [a, b, c, d, e, f, g, h, i, j, k] = myString;
+// console.log(k);
+
+// let a = 10;
+// let b = 20;
+// [a, b] = [b, a];
+// console.log(a, b);
+
+// var arr = [1, 2, 3];
+// var result = arr.push(4);
+// console.log(result);
+
+// let max;
+// const numberArray = [3, 5, 2];
+// numberArray.forEach((element) => {
+// if (max < element) {
+// max = element;
+// }
+// });
+// console.log(max);
+
+// const {
+//     name: myName
+//     } = {
+//     name: 'Lydia'
+//     };
+//     console.log(name);
+
+// const myFunc = ({
+//     x,
+//     y,
+//     z
+//     }) => {
+//     console.log(x, y, z);
+//     };
+//     myFunc(1, 2, 3);
+
+// console.log([1, 2, 3].map(num => {
+//     if (typeof num === 'number') return;
+//     return num * 2;
+//     }));
+
+const a = [1, 2, 3];
+const b = a.reduce((acc, x) => acc.concat([x, x]), []);
+console.log(b);
